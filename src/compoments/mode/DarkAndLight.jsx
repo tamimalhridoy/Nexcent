@@ -18,14 +18,14 @@ const DarkAndLight = () => {
         {mode === "light" ? (
           <button
             onClick={toggleMode}
-            className="text-2xl hover:text-brand transition-all"
+            className="text-2xl bg-slate-200 w-8 h-8 flex justify-center items-center rounded-full"
           >
             <MdDarkMode />
           </button>
         ) : (
           <button
             onClick={toggleMode}
-            className="text-2xl hover:text-brand transition-all"
+            className="text-2xl bg-slate-700 text-white w-8 h-8 flex justify-center items-center rounded-full"
           >
             <MdLightMode />
           </button>
