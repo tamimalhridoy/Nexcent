@@ -1,37 +1,25 @@
-import React, { useState } from "react";
-import { MdDarkMode, MdLightMode } from "react-icons/md";
+import React, { createContext, useEffect, useState } from "react";
+export const ThemeContext = createContext();
 
-const DarkAndLight = () => {
-  const [mode, setMode] = useState("light");
-  const toggleMode = () => {
-    if (mode === "light") {
-      setMode("dark");
-      document.body.style.backgroundColor = "black";
+const DarkAndLight = ({ children }) => {
+  const [theme, SetTheme] = useState("dark");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
     } else {
-      setMode("light");
-      document.body.style.backgroundColor = "white";
+      document.documentElement.classList.remove("dark");
     }
+  }, [theme]);
+
+  const taggleTheme = () => {
+    SetTheme(theme === "light" ? "dark" : "light");
   };
+
   return (
-    <section>
-      <div>
-        {mode === "light" ? (
-          <button
-            onClick={toggleMode}
-            className="text-2xl bg-slate-200 w-8 h-8 flex justify-center items-center rounded-full"
-          >
-            <MdDarkMode />
-          </button>
-        ) : (
-          <button
-            onClick={toggleMode}
-            className="text-2xl bg-slate-700 text-white w-8 h-8 flex justify-center items-center rounded-full"
-          >
-            <MdLightMode />
-          </button>
-        )}
-      </div>
-    </section>
+    <ThemeContext.Provider value={{ theme, taggleTheme }}>
+      {children}
+    </ThemeContext.Provider>
   );
 };
 

@@ -2,13 +2,16 @@ import React from "react";
 import Navbar from "./fixed/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "./fixed/Footer";
+import DarkAndLight from "./mode/DarkAndLight";
 
 const Layout = () => {
   return (
     <>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <DarkAndLight>
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </DarkAndLight>
     </>
   );
 };
