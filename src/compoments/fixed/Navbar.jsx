@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Button from "../all-compts/Button";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
+import { FaBars } from "react-icons/fa";
+
 import { ThemeContext } from "../mode/DarkAndLight";
 
 const Navbar = () => {
@@ -14,7 +16,7 @@ const Navbar = () => {
             <Link to="/">
               <img src="/Logo.png" alt="nav-logo" />
             </Link>
-            <ul className="flex gap-6 font-primary text-base font-medium dark:text-white">
+            <ul className="flex gap-6 font-primary text-base font-medium dark:text-white absolute top-0 left-0 bg-yellow-50">
               <li className="hover:text-brand transition-all">
                 <Link>Home</Link>
               </li>
@@ -50,8 +52,9 @@ const Navbar = () => {
                   <MdLightMode />
                 </button>
               )}
-              <Button title="Login" />
-              <Button title="Sign up" />
+              {/* <Button title="Login" />
+              <Button title="Sign up" /> */}
+              <FaBars className="text-2xl dark:text-white" />
             </div>
           </div>
         </div>
