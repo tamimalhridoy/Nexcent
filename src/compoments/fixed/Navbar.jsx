@@ -16,7 +16,7 @@ const Navbar = () => {
             <Link to="/">
               <img src="/Logo.png" alt="nav-logo" />
             </Link>
-            <ul className="flex gap-6 font-primary text-base font-medium dark:text-white absolute top-0 left-0 bg-yellow-50">
+            <ul className="flex flex-col w-1/2 gap-6 font-primary text-base font-medium dark:text-white absolute top-0 left-0 bg-slate-700 h-screen">
               <li className="hover:text-brand transition-all">
                 <Link>Home</Link>
               </li>
