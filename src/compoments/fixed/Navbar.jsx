@@ -8,7 +8,8 @@ import { ThemeContext } from "../mode/DarkAndLight";
 
 const Navbar = () => {
   const { theme, taggleTheme } = useContext(ThemeContext);
-  ConstantSourceNode
+  const { theme, taggleTheme } = useContext(ThemeContext);
+  const { theme, taggleTheme } = useContext(ThemeContext);
   return (
     <nav className="">
       <div className="py-8 dark:bg-gray-800">
