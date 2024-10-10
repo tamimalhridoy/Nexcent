@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Button from "../all-compts/Button";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
+--------------------------------------
 
 import { ThemeContext } from "../mode/DarkAndLight";
 
