@@ -16,7 +16,7 @@ const Navbar = () => {
             <Link to="/">
               <img src="/Logo.png" alt="nav-logo" />
             </Link>
-            <ul className="flex flex-col w-1/2 gap-6 font-primary text-base font-medium dark:text-white absolute top-0 left-0 bg-slate-700 h-screen">
+            <ul className="flex gap-6 font-primary text-base font-medium dark:text-white ">
               <li className="hover:text-brand transition-all">
                 <Link>Home</Link>
               </li>
@@ -54,7 +54,7 @@ const Navbar = () => {
               )}
               {/* <Button title="Login" />
               <Button title="Sign up" /> */}
-              <FaBars className="text-2xl dark:text-white" />
+              {/* <FaBars className="text-2xl dark:text-white" /> */}
             </div>
           </div>
         </div>
