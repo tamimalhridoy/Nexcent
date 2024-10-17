@@ -1,12 +1,11 @@
-import React from 'react'
-
+import React from "react";
 
 const Bannar = () => {
   return (
-    <div>
+    <section>
+      <div>bannar</div>
+    </section>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Bannar
+export default Bannar;
