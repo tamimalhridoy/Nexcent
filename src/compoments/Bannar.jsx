@@ -3,7 +3,9 @@ import React from "react";
 const Bannar = () => {
   return (
     <section>
-      <div>bannar</div>
+      <div className="continer">
+        
+      </div>
     </section>
   );
 };
