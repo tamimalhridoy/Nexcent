@@ -3,8 +3,10 @@ import React from "react";
 const Bannar = () => {
   return (
     <section>
-      <div className="continer">
-        
+      <div className="container">
+        <div>
+          
+        </div>
       </div>
     </section>
   );

@@ -1,10 +1,14 @@
 import React from "react";
 import DarkAndLight from "./mode/DarkAndLight";
+import Bannar from "./Bannar";
 
 const Home = () => {
   return (
     <DarkAndLight>
-      <div className="">home</div>
+      <div className="">
+        <Bannar />
+        home
+      </div>
     </DarkAndLight>
   );
 };
