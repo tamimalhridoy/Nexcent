@@ -18,6 +18,9 @@ const Bannar = () => {
               <button className="font-medium text-sm font-primary py-3 px-9 bg-brand rounded-lg">
                 Register
               </button>
+              <button className="font-medium text-sm font-primary py-3 px-9 bg-brand rounded-lg">
+                Register
+              </button>
             </div>
           </div>
           <img
