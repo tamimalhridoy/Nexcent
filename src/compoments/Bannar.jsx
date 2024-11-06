@@ -25,6 +25,16 @@ const Bannar = () => {
             className="w-full"
             alt="banner-images 01"
           />
+          <img
+            src="/banner-images01.png"
+            className="w-full"
+            alt="banner-images 01"
+          />
+          <img
+            src="/banner-images01.png"
+            className="w-full"
+            alt="banner-images 01"
+          />
         </div>
       </div>
     </section>
