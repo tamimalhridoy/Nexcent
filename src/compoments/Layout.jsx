@@ -11,8 +11,6 @@ const Layout = () => {
         <Navbar />
         <Outlet />
         <Footer />
-        <Footer />
-        <Footer />
       </DarkAndLight>
     </>
   );
