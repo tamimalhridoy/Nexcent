@@ -53,7 +53,6 @@ const Navbar = () => {
                 </button>
               )}
               <Button title="Login" />
-              
               <button className="font-medium text-sm font-primary py-2 px-5 bg-brand text-white rounded-lg">
                 Sign up
               </button>

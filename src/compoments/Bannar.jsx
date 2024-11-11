@@ -1,10 +1,39 @@
 import React from "react";
 import "slick-carousel/slick/slick.css";
+import Slider from "react-slick";
 
 const Bannar = () => {
+  function SimpleSlider() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
   return (
     <section className="dark:bg-gray-800 dark:text-white">
       <div className="container">
+      <Slider {...settings}>
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+      </Slider>
         <div className="flex py-24">
           <div className=" my-16">
             <div data-aos="fade-right">
