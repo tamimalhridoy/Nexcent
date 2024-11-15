@@ -14,26 +14,6 @@ const Bannar = () => {
   return (
     <section className="dark:bg-gray-800 dark:text-white">
       <div className="container">
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-      </Slider>
         <div className="flex py-24">
           <div className=" my-16">
             <div data-aos="fade-right">
@@ -49,6 +29,11 @@ const Bannar = () => {
               </button>
             </div>
           </div>
+          <img
+            src="/banner-images01.png"
+            className="w-full"
+            alt="banner-images 01"
+          />
           <img
             src="/banner-images01.png"
             className="w-full"
